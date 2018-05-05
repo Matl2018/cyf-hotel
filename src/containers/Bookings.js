@@ -11,6 +11,7 @@ export default class Bookings extends Component {
   render() {
     return (
       <div className="App-content">
+        <p>{'There are bookings available on ' + new Date().toLocaleDateString()}</p>
         <div className="container">
           <Search search={this.search} />
           {/* <Results results={this.state.results} /> */}
