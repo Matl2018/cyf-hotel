@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Search = props => (
   <div className="search">
@@ -10,8 +10,12 @@ const Search = props => (
         <div className="form-group search-box">
           <label htmlFor="customerId">Customer Id</label>
           <div className="search-row">
-            <input type="text" id="customerId" className="form-control" placeholder="Customer Id" />
-            <button className="btn btn-primary fn-submit-name">Search IDs</button>
+            <input
+              type="text"
+              id="customerId"
+              className="form-control"
+              placeholder="Customer Id"
+            />
           </div>
         </div>
       </div>
