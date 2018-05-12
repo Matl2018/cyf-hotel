@@ -12,7 +12,7 @@ class App extends Component {
     return (
       <div className="App">
         <Logo title="Welcome to CYF Hotel" />
-        <Bookings />
+        <Bookings buttonName="Click Plz " />
         {/* <Button /> */}
         <SpecialDeals />
         <Footer />
