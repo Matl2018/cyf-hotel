@@ -1,29 +1,40 @@
 import React from "react";
 import Button from "./Button";
-import ButtonForNames from "./ButtonForNames";
 
-const Search = props => (
-  <div className="search">
-    <div className="page-header">
-      <h4 className="text-left">Search Bookings</h4>
-    </div>
-    <div className="row search-wrapper">
-      <div className="col">
-        <div className="form-group search-box">
-          <label htmlFor="customerId">Customer Id</label>
-          <Button />
+// const Search = props => (
+//   <div className="search">
+//     <div className="page-header">
+//       <h4 className="text-left">Search Bookings</h4>
+//     </div>
+//     <div className="row search-wrapper">
+//       <div className="col">
+//         <div className="form-group search-box">
+//           <Button inputText="Customer ID" buttonText="search IDs" />
+//           <Button inputText="Customer Name" buttonText="search Names" />
+//         </div>
+//       </div>
+//     </div>
+//   </div>
+// );
+
+class Search extends React.Component {
+  render() {
+    return (
+      <div className="search">
+        <div className="page-header">
+          <h4 className="text-left">Search Bookings</h4>
+        </div>
+        <div className="row search-wrapper">
+          <div className="col">
+            <div className="form-group search-box">
+              <Button inputText="Customer ID" buttonText="search IDs" />
+              <Button inputText="Customer Name" buttonText="search Names" />
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div className="row search-wrapper">
-      <div className="col">
-        <div className="form-group search-box">
-          <label htmlFor="customerNames">Customer Names</label>
-          <ButtonForNames />
-        </div>
-      </div>
-    </div>
-  </div>
-);
+    );
+  }
+}
 
 export default Search;
