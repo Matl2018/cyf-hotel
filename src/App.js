@@ -5,7 +5,7 @@ import Footer from "./components/Footer.js";
 import Logo from "./components/Logo.js";
 import SpecialDeals from "./components/SpecialDeals.js";
 import "./App.css";
-import Button from "./components/Button.js";
+// import Button from "./components/Button.js";
 
 class App extends Component {
   render() {
@@ -13,7 +13,7 @@ class App extends Component {
       <div className="App">
         <Logo title="Welcome to CYF Hotel" />
         <Bookings />
-        <Button />
+        {/* <Button /> */}
         <SpecialDeals />
         <Footer />
       </div>
